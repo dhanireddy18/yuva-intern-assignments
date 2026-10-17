@@ -1,0 +1,21 @@
+product_id,product_name,category,unit_price
+P01,Wireless Mouse,Electronics,899
+P02,Bluetooth Speaker,Electronics,2499
+P03,Smartphone,Electronics,18999
+P04,Laptop,Electronics,54999
+P05,Headphones,Electronics,3499
+P06,Smart Watch,Electronics,7999
+P07,Office Chair,Furniture,6999
+P08,Study Desk,Furniture,8499
+P09,Bookshelf,Furniture,4599
+P10,Floor Lamp,Furniture,1899
+P11,Notebook Pack,Stationery,249
+P12,Gel Pens (10),Stationery,199
+P13,Desk Organizer,Stationery,549
+P14,Planner,Stationery,399
+P15,Marker Set,Stationery,299
+P16,T-Shirt,Clothing,599
+P17,Jeans,Clothing,1799
+P18,Hoodie,Clothing,1499
+P19,Sneakers,Clothing,2999
+P20,Jacket,Clothing,3499
