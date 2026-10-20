@@ -1,0 +1,52 @@
+{
+  "model": "Ridge (tuned)",
+  "task": "Regression: predict a quantitative measure of diabetes disease progression one year after baseline",
+  "dataset": "Diabetes dataset (442 patients), Efron, Hastie, Johnstone and Tibshirani (2004), Annals of Statistics",
+  "training_patients": 353,
+  "test_patients": 89,
+  "inputs": [
+    "age",
+    "sex",
+    "bmi",
+    "bp",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "pipeline_steps": [
+    "prep",
+    "model"
+  ],
+  "feature_decision": "Feature ablation (training data only) kept 'Raw 10 features'; the engineered LDL/HDL ratio and BMI band did not improve cross-validated RMSE and the BMI band caused implausible jumps in predictions.",
+  "tuned_parameters": {
+    "model__alpha": 0.529831690628371
+  },
+  "cross_validation_rmse": 55.23,
+  "test_metrics": {
+    "rmse": 53.805,
+    "mae": 42.81,
+    "median_ae": 37.325,
+    "r2": 0.454
+  },
+  "test_rmse_95ci": [
+    46.0,
+    61.6
+  ],
+  "baseline_test_rmse": 73.22,
+  "library_versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "seaborn": "0.13.2",
+    "joblib": "1.5.3"
+  },
+  "random_seed": 42,
+  "intended_use": "Teaching and portfolio demonstration of a leak-free machine learning workflow.",
+  "not_intended_for": "Clinical decision making. The data is small, from one study, and the model explains only part of the variation.",
+  "security_note": "joblib files are pickles: load them only from sources you trust."
+}
